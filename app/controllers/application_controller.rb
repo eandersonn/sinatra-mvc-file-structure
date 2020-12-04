@@ -5,6 +5,11 @@ class ApplicationController < Sinatra::Base
   	set :public_dir, "public"
   end
 
+  class Dog
+    def initialize(name, age, breed)
+    end
+  end
+
   get "/" do
   	erb :index
   end
